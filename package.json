@@ -1,0 +1,20 @@
+{
+  "name": "sandraradell-webpage",
+  "version": "1.0.0",
+  "description": "sandra.radell.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusradell/sandraradell-webpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcusradell/sandraradell-webpage/issues"
+  },
+  "homepage": "https://github.com/marcusradell/sandraradell-webpage#readme"
+}
