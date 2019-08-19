@@ -9,35 +9,47 @@
       html,
       body {
         font-family: Tahoma, Geneva, sans-serif;
-        font-size: 16px;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(244, 244, 244, 1) 49%
-        );
+        font-size: 20px;
         margin: 0;
         padding: 0;
         overflow: hidden;
       }
 
       .page-container {
-        max-width: 1200px;
-        margin: 0 auto;
+        display: flex;
+      }
+
+      .page-content {
+        max-width: 1024px;
+        width: 1024px;
+      }
+
+      .page-background {
+        background: url("background.jpg");
+        background-size: cover;
         height: 100vh;
+        width: 100%;
       }
 
       h1 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         margin: 0;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         margin: 0;
+        margin-top: 60px;
+        background: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 15px solid hotpink;
       }
 
       a {
+        display: inline;
         color: hotpink;
       }
 
@@ -45,7 +57,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: yellowgreen;
       }
 
       .left-title {
@@ -53,6 +64,7 @@
         background: hotpink;
         color: white;
         padding: 15px;
+        width: 50%;
       }
 
       .right-title {
@@ -60,22 +72,54 @@
         background: black;
         color: white;
         padding: 15px;
+        width: 50%;
+      }
+
+      .section {
+        margin: 15px 0;
+        padding: 15px;
+
+        border-bottom: 15px solid black;
+      }
+
+      .even-section {
+        background: mistyrose;
+        color: black;
+      }
+
+      .odd-section {
+        background: papayawhip;
+        color: black;
+      }
+
+      .section-label {
+        font-weight: bold;
       }
     </style>
 
     <title>Sandra Rådell - Legitimerad Psykolog</title>
   </head>
   <body>
-    <h1>
-      <div class="title-container">
-        <div class="left-title"><div>Sandra Rådell</div></div>
-        <span class="right-title">Legitimerad psykolog</span>
-      </div>
-    </h1>
     <div class="page-container">
-      <h2>Kontaktuppgifter</h2>
+      <div class="page-content">
+        <h1>
+          <div class="title-container">
+            <div class="left-title"><div>Sandra Rådell</div></div>
+            <span class="right-title">Legitimerad psykolog</span>
+          </div>
+        </h1>
+        <h2>Kontaktuppgifter</h2>
 
-      Email: <a href="mailto:sandra@radell.net">sandra@radell.net</a>
+        <div class="section odd-section">
+          <span class="section-label">Email</span>
+          <a href="mailto:sandra@radell.net">sandra@radell.net</a>
+        </div>
+        <div class="section even-section">
+          <span class="section-label">Telefon</span>
+          <a href="tel:+46730441534">0730441534</a>
+        </div>
+      </div>
+      <div class="page-background"></div>
     </div>
   </body>
 </html>
