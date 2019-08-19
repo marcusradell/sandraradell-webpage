@@ -9,7 +9,7 @@
       html,
       body {
         font-family: Tahoma, Geneva, sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         background: rgb(255, 255, 255);
         background: linear-gradient(
           180deg,
@@ -18,6 +18,7 @@
         );
         margin: 0;
         padding: 0;
+        overflow: hidden;
       }
 
       .page-container {
@@ -27,15 +28,13 @@
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin: 0;
       }
 
       h2 {
-        font-size: 2.5rem;
-        font-style: italic;
-      }
-      h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 0;
       }
 
       a {
@@ -44,22 +43,37 @@
 
       .title-container {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: center;
+        background: yellowgreen;
+      }
+
+      .left-title {
+        text-align: center;
+        background: hotpink;
+        color: white;
+        padding: 15px;
+      }
+
+      .right-title {
+        text-align: center;
+        background: black;
+        color: white;
+        padding: 15px;
       }
     </style>
 
     <title>Sandra Rådell - Legitimerad Psykolog</title>
   </head>
   <body>
-    <div class="page-container">
+    <h1>
       <div class="title-container">
-        <h1>Sandra Rådell</h1>
-        &nbsp;
-        <h2>-&nbsp;Legitimerad psykolog</h2>
+        <div class="left-title"><div>Sandra Rådell</div></div>
+        <span class="right-title">Legitimerad psykolog</span>
       </div>
-
-      <h3>Kontaktuppgifter</h3>
+    </h1>
+    <div class="page-container">
+      <h2>Kontaktuppgifter</h2>
 
       Email: <a href="mailto:sandra@radell.net">sandra@radell.net</a>
     </div>
