@@ -13,22 +13,17 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-      }
-
-      .page-container {
-        display: flex;
+        background: lightblue;
       }
 
       .page-content {
-        max-width: 1024px;
-        width: 1024px;
-      }
-
-      .page-background {
-        background: url("background.jpg");
+        max-width: 720px;
+        min-height: 100vh;
+        margin: 0 auto;
+        position: relative;
+        background-image: url("background.jpg");
         background-size: cover;
-        height: 100vh;
-        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
       h1 {
@@ -38,31 +33,33 @@
 
       h2 {
         font-size: 1.125rem;
-        margin: 0;
+        margin-left: -15px;
+        margin-right: -15px;
         margin-top: 60px;
-        background: black;
+        background: slategray;
         color: white;
         padding: 15px;
         text-align: center;
         text-transform: uppercase;
-        border-bottom: 15px solid hotpink;
+        box-shadow: 10px 10px 5px black;
       }
 
       a {
         display: inline;
-        color: hotpink;
+        color: blue;
       }
 
       .title-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom: 5px solid black;
       }
 
       .left-title {
         text-align: center;
-        background: hotpink;
-        color: white;
+        background: white;
+        color: black;
         padding: 15px;
         width: 50%;
       }
@@ -75,21 +72,20 @@
         width: 50%;
       }
 
+      .profile-image {
+        display: block;
+        margin: 15px auto;
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+        border: 5px solid black;
+      }
+
       .section {
-        margin: 15px 0;
+        margin: 15px;
         padding: 15px;
-
-        border-bottom: 15px solid black;
-      }
-
-      .even-section {
-        background: mistyrose;
-        color: black;
-      }
-
-      .odd-section {
-        background: papayawhip;
-        color: black;
+        background: white;
+        box-shadow: 10px 10px 5px black;
       }
 
       .section-label {
@@ -100,26 +96,32 @@
     <title>Sandra Rådell - Legitimerad Psykolog</title>
   </head>
   <body>
-    <div class="page-container">
-      <div class="page-content">
-        <h1>
-          <div class="title-container">
-            <div class="left-title"><div>Sandra Rådell</div></div>
-            <span class="right-title">Legitimerad psykolog</span>
+    <div class="page-content">
+      <h1>
+        <div class="title-container">
+          <div class="left-title">
+            <div>Sandra</div>
+            <div>Rådell</div>
           </div>
-        </h1>
-        <h2>Kontaktuppgifter</h2>
+          <span class="right-title"
+            ><div>Legitimerad</div>
+            <div>psykolog</div></span
+          >
+        </div>
+      </h1>
 
-        <div class="section odd-section">
-          <span class="section-label">Email</span>
-          <a href="mailto:sandra@radell.net">sandra@radell.net</a>
-        </div>
-        <div class="section even-section">
-          <span class="section-label">Telefon</span>
-          <a href="tel:+46730441534">0730441534</a>
-        </div>
+      <img class="profile-image" src="sandra.jpg" alt="Sandra" />
+
+      <h2>Kontaktuppgifter</h2>
+
+      <div class="section odd-section">
+        <span class="section-label">Email</span>
+        <a href="mailto:sandra@radell.net">sandra@radell.net</a>
       </div>
-      <div class="page-background"></div>
+      <div class="section even-section">
+        <span class="section-label">Telefon</span>
+        <a href="tel:+46730441534">0730441534</a>
+      </div>
     </div>
   </body>
 </html>
